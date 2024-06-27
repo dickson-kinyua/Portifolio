@@ -15,8 +15,10 @@ body {
   font-size: 14px;
   position: relative;
   background-color: #054468;
-  background-color: #27ae60;
+  /* background-color: #00090e; */
+  background-color: #27ae5f;
   color: #fff;
+  font-weight: 500;
   /* color: gray; */
 }
 
@@ -32,7 +34,7 @@ body {
   left: 0;
   width: 20%;
   height: 95%;
-  margin: 1% 0.5%;
+  margin: 1% 1%;
   /* background: #054468; */
   border: #b5babd6d solid 1px;
   padding: 20px 10px;
@@ -41,7 +43,7 @@ body {
   display: flex;
   height: 100%;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .profile {
@@ -101,11 +103,11 @@ body {
   background-image: linear-gradient(#054468, #05446852), url(./img/profile.jpeg);
   background-position: center;
   background-size: cover;
-  height: 20vh;
+  height: 22vh;
   width: 100%;
   position: sticky;
   top: 0;
-  margin-top: 1%;
+  /* margin-top: 1%; */
 }
 
 .main_header-buttons {
@@ -207,7 +209,7 @@ body {
   /* flex-direction: column; */
   gap: 50px;
   align-items: center;
-  margin-top: 100px;
+  /* margin-top: 30px; */
   border-top: #b5babd87 solid 1px;
   /* border-bottom: #b5babd solid 5px; */
 }
@@ -293,11 +295,12 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
   gap: 40px;
   margin-top: 100px;
   /* border-bottom: #b5babd solid 5px; */
-  /* border-top: #000000 solid 5px; */
-  padding: 200px 100px;
+  border-top: #000000 solid 5px;
+  padding: 200px 150px;
   /* padding-bottom: 350px; */
 }
 .exp_image {
@@ -344,7 +347,7 @@ h5 {
   border-radius: 5%;
 }
 
-.connections_wrapper {
+#connections_wrapper {
   width: 100%;
   padding: 200px 50px;
   /* border-top: #000000 solid 5px; */
@@ -361,7 +364,7 @@ h5 {
   margin-top: 30px;
   gap: 20px;
   text-align: center;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .skills_wrapper {
@@ -383,10 +386,36 @@ h5 {
 .skill_list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   border: gray 2px solid;
-  padding: 10px 10px;
+  padding: 10px 20px;
+}
+.skill_listing li {
+  list-style: disc;
+}
+
+#contact_me-wrapper {
+  height: 200px;
+  width: 100%;
+  /* background-color: #000000; */
+  border: #000000 solid 2px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  padding: 1%;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.form_message {
+  height: 5vh;
 }
 
 .modal {
@@ -395,12 +424,12 @@ h5 {
   display: grid;
   gap: 20px;
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   background-color: #fff7f7;
   color: #000000;
   font-size: 14px;
   padding: 20px 10px;
-  height: 20%;
+  height: 15%;
   width: 90%;
   top: 2%;
   z-index: 2;
@@ -426,11 +455,6 @@ h5 {
   color: red;
 
   /* display: none; */
-}
-
-.border_bottom {
-  /* border-bottom: rgb(83, 78, 78) solid 3px; */
-  /* padding: 3px; */
 }
 
 .overlay {
@@ -523,7 +547,7 @@ form {
   border: 3px solid rgb(176, 165, 179);
   border-top-color: rgb(2, 88, 128);
   border-radius: 50%;
-  animation: loading 1s ease infinite;
+  animation: loading 2s ease infinite;
 }
 
 @keyframes loading {
@@ -535,14 +559,76 @@ form {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 12px;
+  }
+  .side_navigation-wrapper {
+    padding: 10px 5px;
+  }
+  .nav_links {
+    font-size: 12px;
+  }
+  .contact_info {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  #about_me-wrapper {
+    padding: 10px 10px;
+    width: auto;
+    flex-direction: column;
+  }
+  .about_me {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+  }
+
+  .profile_nav {
+    width: 100%;
+    align-items: center;
+  }
+  .profile {
+    width: auto;
+  }
+
+  .profile_pic {
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .projects_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar_nav-list {
+    width: 100%;
+
+    padding: 10px 10px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   body {
     font-size: 10px;
+    margin-right: 0;
+    width: 100vw;
+    /* padding: 3px; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
   }
   .side_navigation-wrapper {
     position: relative;
     height: fit-content;
     width: 100%;
+    margin: 0;
+    /* /* position: sticky; */
+    top: 0;
+    left: 0;
+    right: 0; */
+
     /* display: flex; */
     padding: 0;
     margin: 0;
@@ -551,12 +637,12 @@ form {
   .main_navigation {
     display: flex;
     flex-direction: column;
-    /* width: 100%; */
+    width: 100%;
   }
   .profile {
     display: flex;
     margin-bottom: 0;
-    align-items: center;
+    /* align-items: center; */
   }
   .my_name {
     display: none;
@@ -568,20 +654,22 @@ form {
   .profile_nav {
     width: 100%;
     display: flex;
-    /* flex-direction: column; */
-    /* align-items: flex-start; */
+    gap: 10px;
   }
   .sidebar_nav-list {
     width: 100%;
 
     padding: 0;
-    font-size: 10px;
+    font-size: 6px;
     display: grid;
-    display: none;
-    grid-template-columns: repeat(4, 1fr);
+    /* display: none; */
+    grid-template-columns: repeat(3, 1fr);
   }
   .contact_info {
+    display: flex;
     margin: 10px;
+    justify-content: flex-end;
+    gap: 20px;
   }
   .main_header {
     font-size: 20px;
@@ -592,10 +680,10 @@ form {
     margin: 0;
   }
   .front_end {
-    font-size: 20px;
+    font-size: 18px;
   }
   .web_developer {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .main_page-content--wrapper {
@@ -606,17 +694,61 @@ form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 10px;
+    margin-top: 10px;
   }
   .about_me {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    /* flex-direction: column; */
+    padding: 0;
   }
   .projects_list {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0;
     margin: 0;
+    width: 100%;
+  }
+  #achievements_wrapper {
+    padding: 20px 20px;
+    margin-bottom: 0;
+  }
+  #experience_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .experience_list {
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .exp_images-div {
+    flex: 0;
+  }
+  .exp_image {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+  .experience_list-div {
+    flex: 2;
+  }
+  #projects_section-wrapper {
+    padding-top: 25px;
+    width: 100%;
+  }
+  .projects_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects_images {
+    width: 300px;
+    height: 200px;
+    border-radius: 5%;
   }
 }

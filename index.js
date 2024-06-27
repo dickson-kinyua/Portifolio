@@ -13,12 +13,12 @@ const closeOverview = document.querySelector(".close_overview");
 const loader = document.querySelector(".loader");
 const navigation_links = document.querySelector(".nav_links");
 
-window.addEventListener("load", () => {
-  loader.classList.add("loader-hidden");
-});
-
 loader.addEventListener("transitionend", () => {
   document.body.removeChild("loader");
+});
+
+window.addEventListener("load", () => {
+  loader.classList.add("loader-hidden");
 });
 
 introButtton.addEventListener("load", () => {
