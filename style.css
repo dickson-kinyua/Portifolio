@@ -663,7 +663,7 @@ form {
     font-size: 6px;
     display: grid;
     /* display: none; */
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .contact_info {
     display: flex;
