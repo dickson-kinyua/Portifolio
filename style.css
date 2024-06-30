@@ -555,7 +555,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 1s, visibility 1s;
+  transition: opacity 3s, visibility 3s;
 }
 
 .loader-hidden {
@@ -571,7 +571,7 @@ form {
   border: 3px solid rgb(176, 165, 179);
   border-top-color: rgb(2, 88, 128);
   border-radius: 50%;
-  animation: loading 2s ease infinite;
+  animation: loading 3s ease infinite;
 }
 
 @keyframes loading {
