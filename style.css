@@ -83,7 +83,7 @@ body {
 
 .sidebar_nav-list {
   display: flex;
-  gap: 25px;
+  gap: 15px;
   list-style: none;
   color: #fff;
 }
@@ -612,6 +612,12 @@ form {
     flex-direction: column;
     align-items: flex-end;
   }
+  .front_end {
+    font-size: 26px;
+  }
+  .web_developer {
+    font-size: 18px;
+  }
   #about_me-wrapper {
     padding: 10px 10px;
     width: auto;
@@ -625,10 +631,7 @@ form {
   #experience_wrapper {
     padding: 20px;
   }
-  .profile_nav {
-    width: 100%;
-    align-items: center;
-  }
+
   .profile {
     width: auto;
   }
@@ -707,6 +710,9 @@ form {
     gap: 10px;
     padding: 10px;
   }
+  .intro_button {
+    padding: 10px;
+  }
   .sidebar_nav-list {
     width: 100%;
 
@@ -731,10 +737,10 @@ form {
     margin: 0;
   }
   .front_end {
-    font-size: 18px;
+    font-size: 12px;
   }
   .web_developer {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .main_page-content--wrapper {
