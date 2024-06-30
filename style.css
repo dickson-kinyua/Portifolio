@@ -220,7 +220,7 @@ body {
 #about_me-wrapper {
   width: 100%;
   display: flex;
-  padding: 100px 100px;
+  padding: 100px 10px;
   /* padding-bottom: 200px; */
   /* gap: 20px; */
   /* flex-direction: column; */
@@ -278,7 +278,7 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 200px 100px;
+  padding: 200px 10px;
   padding-top: 300px;
   width: 100%;
 }
@@ -289,7 +289,7 @@ h4 {
 
 #achievements_wrapper {
   /* margin-top: 100px; */
-  padding: 200px 100px;
+  padding: 200px 10px;
   padding-top: 300px;
   width: 100%;
   display: flex;
@@ -332,7 +332,7 @@ h4 {
   margin-top: 100px;
   /* border-bottom: #b5babd solid 5px; */
   /* border-top: #000000 solid 5px; */
-  padding: 200px 150px;
+  padding: 200px 10px;
   padding-top: 300px;
 }
 
@@ -363,7 +363,7 @@ h4 {
 #projects_section-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 0 50px;
+  /* padding: 0 1000px; */
   gap: 50px;
   padding-top: 300px;
 }
@@ -395,7 +395,7 @@ h5 {
 
 #connections_wrapper {
   width: 100%;
-  padding: 200px 50px;
+  padding: 200px 10px;
   /* border-top: #000000 solid 5px; */
   padding-top: 300px;
 }
@@ -618,7 +618,7 @@ form {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   body {
     font-size: 12px;
   }
@@ -629,7 +629,7 @@ form {
     padding: 10px 5px;
   }
   .nav_links {
-    font-size: 12px;
+    font-size: 10px;
   }
   .contact_info {
     flex-direction: column;
@@ -657,8 +657,8 @@ form {
   }
 
   .profile_pic {
-    width: 120px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
   }
   .projects_list {
@@ -673,7 +673,7 @@ form {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   body {
     font-size: 10px;
     margin-right: 0;
