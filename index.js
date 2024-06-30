@@ -11,7 +11,7 @@ const overview = document.querySelector(".overview");
 const overviewWrapper = document.querySelector(".overview_wrapper");
 const closeOverview = document.querySelector(".close_overview");
 const loader = document.querySelector(".loader");
-const navigation_links = document.querySelector(".nav_links");
+const navigation_links = document.querySelectorAll(".nav_links");
 
 loader.addEventListener("transitionend", () => {
   document.body.removeChild("loader");
@@ -49,11 +49,3 @@ closeOverview.addEventListener("click", () => {
   overviewWrapper.classList.remove("overlay2");
   overviewWrapper.classList.add("hidden2");
 });
-
-const add = [2, 4, 6, 8, 1];
-let sum = 0;
-
-for (let i = 0; i < add.length; i++) {
-  sum = sum + add[i];
-}
-console.log(sum);
