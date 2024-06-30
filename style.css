@@ -59,6 +59,9 @@ body {
   height: 100px;
   border-radius: 50%;
 }
+.my_name {
+  color: #ffffff94;
+}
 
 .nav_links {
   text-decoration: none;
@@ -137,19 +140,20 @@ body {
 .front_end {
   text-transform: uppercase;
   align-self: center;
-  font-size: 26px;
+  font-size: 22px;
   letter-spacing: 8px;
   /* color: #ffffff94; */
 }
 
 .web_developer {
   align-self: center;
+  font-size: 22px;
 }
 
 .intro_button1 {
   text-transform: uppercase;
   font-weight: 600;
-  padding: 5px 10px;
+  padding: 15px 30px;
   border-radius: 20px;
   border: none;
   transition: all 0.5s;
@@ -157,6 +161,9 @@ body {
   font-size: 10px;
   text-decoration: none;
   background-color: #ffffff95;
+  /* color: #ffffff94; */
+  /* background-color: orangered; */
+
   cursor: pointer;
   display: inline-block;
 }
@@ -171,15 +178,15 @@ body {
   right: 20px; */
   text-transform: uppercase;
   font-weight: 600;
-  padding: 5px 10px;
+  padding: 15px 30px;
   border-radius: 20px;
   border: none;
   transition: all 0.5s;
   color: #000000;
   font-size: 10px;
   text-decoration: none;
-  background-color: #ffffffab;
-  cursor: progress;
+  background-color: #ffffff95;
+  cursor: pointer;
   display: inline-block;
 }
 
@@ -227,7 +234,8 @@ body {
   align-items: flex-start;
 }
 
-.about_me-1 p {
+.about_me-1 p,
+h4 {
   font-weight: 600;
   /* text-decoration: underline; */
   border: #1e1f1f7c solid 1px;
@@ -235,13 +243,15 @@ body {
   border-bottom-right-radius: 20px;
   padding: 10px 20px;
   background-color: #6361613a;
+  text-align: center;
 }
 
 .hello_aboutme {
   color: #3c3c3c;
   color: #554545;
+  color: orangered;
 
-  font-weight: 800;
+  font-weight: 400;
   /* font-size: 20px; */
 }
 
@@ -453,7 +463,7 @@ h5 {
   color: #000000;
   font-size: 14px;
   padding: 20px 10px;
-  height: 15%;
+  /* height: 15%; */
   width: 90%;
   top: 2%;
   z-index: 2;
