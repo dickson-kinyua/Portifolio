@@ -40,6 +40,7 @@ body {
   border: #b5babd10 solid 1px;
   padding: 20px 10px;
 }
+
 .main_navigation {
   display: flex;
   height: 100%;
@@ -75,11 +76,11 @@ body {
   color: orangered;
 }
 
-.contact_info {
+/* .contact_info {
   margin-top: 100px;
   display: flex;
   justify-content: space-around;
-}
+} */
 .social_links {
   color: #fff;
   text-decoration: none;
@@ -105,6 +106,7 @@ body {
   background-image: linear-gradient(#054468, #05446852), url(./img/profile.jpeg);
   background-position: center;
   background-size: cover;
+  border-radius: 50px;
   height: 22vh;
   width: 100%;
   position: sticky;
@@ -129,7 +131,7 @@ body {
   justify-content: center;
   padding: 40px 20px;
   font-size: 30px;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .front_end {
@@ -137,6 +139,7 @@ body {
   align-self: center;
   font-size: 26px;
   letter-spacing: 8px;
+  /* color: #ffffff94; */
 }
 
 .web_developer {
@@ -342,13 +345,18 @@ h5 {
 .projects_list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 20px;
+  gap: 20px;
 }
 
 .projects_images {
   width: 400px;
   height: 300px;
   border-radius: 5%;
+}
+
+.projects_images:hover {
+  /* cursor: pointer; */
+  pointer-events: none;
 }
 
 #connections_wrapper {
@@ -400,23 +408,35 @@ h5 {
 }
 
 #contact_me-wrapper {
-  height: 200px;
+  /* height: 300px; */
   width: 100%;
   /* background-color: #000000; */
-  border: #000000 solid 2px;
+  border: #000000 solid 1px;
   display: flex;
   flex-direction: column;
   /* align-items: center;
   justify-content: center; */
   padding: 1%;
 }
+.social_media {
+  display: flex;
+  justify-content: space-between;
+}
 
+.contact_me {
+  flex: 1;
+}
 .contact_form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  /* align-items: center; */
+  /* justify-content: center; */
   width: 50%;
 }
+
+/* .contact_inf {
+} */
 
 .form_message {
   height: 5vh;
@@ -567,6 +587,9 @@ form {
   body {
     font-size: 12px;
   }
+  .fa {
+    display: none;
+  }
   .side_navigation-wrapper {
     padding: 10px 5px;
   }
@@ -587,7 +610,9 @@ form {
     width: auto;
     flex-direction: column;
   }
-
+  #experience_wrapper {
+    padding: 20px;
+  }
   .profile_nav {
     width: 100%;
     align-items: center;
@@ -613,7 +638,7 @@ form {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   body {
     font-size: 10px;
     margin-right: 0;
@@ -623,7 +648,12 @@ form {
     flex-direction: column;
     align-items: center; */
   }
+
+  .fa {
+    display: block;
+  }
   .side_navigation-wrapper {
+    /* display: none; */
     position: relative;
     height: fit-content;
     width: 100%;
@@ -632,14 +662,17 @@ form {
     top: 0;
     left: 0;
     right: 0;
-    padding: 0;
+    padding: 10px;
     margin: 0;
-    border: #000000 solid 2px;
+    /* border: #000000 solid 2px; */
   }
   .main_navigation {
     display: flex;
     /* flex-direction: column; */
     width: 100%;
+  }
+  .sidebar_list {
+    display: none;
   }
   .profile {
     display: flex;
