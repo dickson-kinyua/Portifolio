@@ -34,13 +34,16 @@ body {
 }
 
 .side_navigation-wrapper {
-  /* position: sticky;
-  top: 0; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
-  margin: 1% 1%;
-  /* background: #054468; */
+  margin: 0 1%;
+  background: #0544688f;
+  background-color: #161616;
   /* border: #b5babd41 solid 1px; */
-  padding: 20px 5px;
+  padding: 10px 5px;
 }
 
 .main_navigation {
@@ -97,11 +100,12 @@ body {
   width: 100%;
 
   top: 0;
-  margin-top: 1%;
+  margin-top: 10%;
 }
 
 .main_header-buttons {
   align-self: center;
+  align-items: baseline;
   display: flex;
 
   gap: 50px;
@@ -122,7 +126,7 @@ body {
 }
 
 .front_end {
-  text-transform: uppercase;
+  text-transform: capitalize;
   align-self: center;
   font-size: 40px;
   letter-spacing: 8px;
@@ -137,18 +141,18 @@ body {
 .download_cv-btn {
   text-transform: uppercase;
   font-weight: 600;
-
   transition: all 0.5s;
-  color: #000000;
   font-size: 16px;
-
   color: #ffffff94;
-  border-bottom: solid 2px #2d2d31;
-
+  color: orangered;
   cursor: pointer;
 }
 
-.intro_button {
+.download_cv-btn:hover {
+  color: #ffffff94;
+}
+
+.view_skills {
   /* position: absolute;
   right: 20px; */
   text-transform: uppercase;
@@ -161,13 +165,14 @@ body {
   font-size: 20px;
   text-decoration: none;
   background-color: #ffffff95;
+  background-color: orangered;
   cursor: pointer;
   display: inline-block;
 }
 
-.intro_button:hover {
+.view_skills:hover {
   background: #ffffffc2;
-  box-shadow: indigo;
+  color: orangered;
 }
 
 .main_page-content--wrapper {
@@ -251,7 +256,7 @@ h4 {
   align-items: center;
   gap: 30px;
   padding: 20px 30px;
-  /* padding-top: 300px; */
+  padding-top: 100px;
   width: 90%;
 }
 
@@ -263,7 +268,7 @@ h4 {
   /* margin-top: 100px; */
   /* padding: 200px 10px;
   padding-top: 300px; */
-  padding: 100px 30px;
+  padding: 200px 30px;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -710,8 +715,9 @@ form {
     gap: 10px;
     padding: 10px;
   }
-  .intro_button {
-    padding: 10px;
+  .view_skills {
+    font-size: 16px;
+    padding: 5px;
   }
   .sidebar_nav-list {
     width: 100%;
@@ -737,7 +743,8 @@ form {
     margin: 0;
   }
   .front_end {
-    font-size: 12px;
+    font-size: 22px;
+    text-align: center;
   }
   .web_developer {
     font-size: 10px;
