@@ -42,7 +42,7 @@ closeButton.addEventListener("click", function () {
 
 download_cv.addEventListener("click", () => {
   overviewWrapper.classList.add("overlay2");
-  overviewWrapper.classList.remove("hidden2");
+  // overviewWrapper.classList.remove("hidden2");
 });
 
 closeOverview.addEventListener("click", () => {
