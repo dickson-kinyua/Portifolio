@@ -12,6 +12,7 @@ const overviewWrapper = document.querySelector(".overview_wrapper");
 const closeOverview = document.querySelector(".close_overview");
 const loader = document.querySelector(".loader");
 const navigation_links = document.querySelectorAll(".nav_links");
+const menu_Icon = document.querySelector(".checkbtn");
 
 loader.addEventListener("transitionend", () => {
   document.body.removeChild("loader");
@@ -49,3 +50,7 @@ closeOverview.addEventListener("click", () => {
   overviewWrapper.classList.remove("overlay2");
   overviewWrapper.classList.add("hidden2");
 });
+
+// menu_Icon.addEventListener("click", () => {
+//   document.querySelector(".sidebar_nav-list").style.display = "block";
+// });
