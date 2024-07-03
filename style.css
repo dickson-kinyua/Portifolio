@@ -18,7 +18,7 @@ body {
   /* background-color: #00090e; */
   /* background-color: #27ae5f; */
   background: #2d2d31;
-  color: #ffffff94;
+  color: #ffffffdc;
   font-weight: 500;
   background-image: linear-gradient(#131414, #0d0d0e52), url(./img/images.jfif);
   /* background-position: center; */
@@ -28,6 +28,7 @@ body {
 }
 
 .main_page-content--wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,6 +39,7 @@ body {
 .top_navigation-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -80,22 +82,41 @@ body {
   border-bottom: 1px solid #c69963 !important;
 }
 
-.main_header {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.main_header-wrapper {
   align-items: center;
   width: 100%;
+  padding: 1%;
   margin-top: 10%;
 }
+.main_hd {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.main_header-1 {
+  align-self: center;
+  text-align: center;
 
+  justify-self: center;
+  flex: 2;
+}
+.main_header-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 1;
+}
+.main_header-p {
+  margin-bottom: 20px;
+  /* border: solid 1px #2d2d31; */
+}
 .front_end {
   text-transform: capitalize;
-  font-size: 40px;
+  font-size: 34px;
   letter-spacing: 8px;
 }
 .web_developer {
-  font-size: 22px;
+  font-size: 18px;
 }
 .main_header-buttons {
   width: auto;
@@ -412,10 +433,10 @@ h5 {
     align-items: flex-end;
   }
   .front_end {
-    font-size: 26px;
+    font-size: 24px;
   }
   .web_developer {
-    font-size: 18px;
+    font-size: 12px;
   }
   #about_me-wrapper {
     padding: 10px 10px;
@@ -477,36 +498,17 @@ h5 {
     top: 0;
     left: 0;
     right: 0;
-    padding: 10px;
+    padding: 10px 20px;
     margin: 0;
     /* border: #000000 solid 2px; */
   }
-  .main_navigation {
-    display: flex;
-    /* flex-direction: column; */
-    width: 100%;
-  }
-  .sidebar_list {
-    display: none;
-  }
+
   .profile {
     display: flex;
     margin-bottom: 0;
     /* align-items: center; */
   }
 
-  .profile_nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    /* flex-direction: column; */
-    align-items: flex-start;
-    gap: 10px;
-    padding: 10px;
-  }
-  .main_header-buttons {
-    gap: 20px;
-  }
   .view_skills {
     font-size: 14px;
     padding: 5px;
@@ -519,8 +521,9 @@ h5 {
 
     padding: 0;
     font-size: 6px;
-    display: grid;
+    display: block;
     display: none;
+
     grid-template-columns: repeat(2, 1fr);
   }
   .contact_info {
@@ -529,20 +532,29 @@ h5 {
     justify-content: flex-end;
     gap: 20px;
   }
-  .main_header {
-    font-size: 20px;
-    position: relative;
-    height: fit-content;
-    /* width: 100%; */
-    padding: 0;
-    margin: 0;
+  .main_header-wrapper {
+    width: 100%;
+  }
+  .main_hd {
+    width: 100%;
+    text-align: center;
+  }
+  .main_header-buttons {
+    /* text-align: center; */
+    align-self: center;
+    gap: 20px;
+  }
+  .main_header-1 {
+    display: none;
   }
   .front_end {
-    font-size: 22px;
+    font-size: 16px;
     text-align: center;
+    text-transform: uppercase;
   }
   .web_developer {
     font-size: 10px;
+    /* padding: 0 10px; */
   }
 
   .main_page-content--wrapper {
@@ -563,6 +575,14 @@ h5 {
     /* flex-direction: column; */
     padding: 0;
   }
+  .about_image-pic {
+    width: 200px;
+    height: auto;
+  }
+  #mission {
+    padding-top: 20px;
+    margin-top: 40px;
+  }
   .projects_list {
     display: grid;
     grid-template-columns: 1fr;
@@ -572,11 +592,12 @@ h5 {
   }
   #achievements_wrapper {
     padding: 20px 20px;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
+    margin: 50px 0;
   }
   #experience_wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     margin-top: 10px;
   }
@@ -597,6 +618,7 @@ h5 {
   }
   #projects_section-wrapper {
     padding-top: 25px;
+    margin: 50px 0;
     width: 100%;
   }
   .projects_list {
