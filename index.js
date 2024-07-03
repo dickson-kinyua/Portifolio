@@ -13,6 +13,7 @@ const closeOverview = document.querySelector(".close_overview");
 const loader = document.querySelector(".loader");
 const navigation_links = document.querySelectorAll(".nav_links");
 const menu_Icon = document.querySelector(".checkbtn");
+const submitB = document.querySelector(".submit_b");
 
 loader.addEventListener("transitionend", () => {
   document.body.removeChild("loader");
@@ -53,4 +54,9 @@ closeOverview.addEventListener("click", () => {
 
 // menu_Icon.addEventListener("click", () => {
 //   document.querySelector(".sidebar_nav-list").style.display = "block";
+// });
+
+// submitB.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   prompt("Your Message has been sent!");
 // });
