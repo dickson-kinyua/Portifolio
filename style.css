@@ -366,11 +366,13 @@ h5 {
   background-color: #ff44003a;
   border: none;
   height: 40px;
+  color: #fff;
 }
 .inputm_bg {
   background-color: #ff44003a;
   border: none;
   height: 80px;
+  color: #fff;
 }
 
 .submit_b {
