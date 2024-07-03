@@ -510,8 +510,8 @@ h5 {
   }
 
   .view_skills {
-    font-size: 14px;
-    padding: 5px;
+    font-size: 12px;
+    padding: 2px;
   }
   .download_cv-btn {
     font-size: 14px;
@@ -533,6 +533,7 @@ h5 {
     gap: 20px;
   }
   .main_header-wrapper {
+    margin-top: 20px;
     width: 100%;
   }
   .main_hd {
@@ -549,7 +550,7 @@ h5 {
     display: none;
   }
   .front_end {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     text-transform: uppercase;
   }
@@ -570,10 +571,11 @@ h5 {
     margin-top: 10px;
   }
   .about_me {
-    width: 100%;
     display: flex;
     align-items: center;
     /* flex-direction: column; */
+    width: 100%;
+    margin-top: 50px;
     padding: 0;
   }
   .about_image-pic {
