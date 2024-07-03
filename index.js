@@ -56,7 +56,7 @@ closeOverview.addEventListener("click", () => {
 //   document.querySelector(".sidebar_nav-list").style.display = "block";
 // });
 
-// submitB.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   prompt("Your Message has been sent!");
-// });
+submitB.addEventListener("click", (e) => {
+  e.preventDefault();
+  alert("Your Message has been sent!");
+});
