@@ -313,7 +313,7 @@ h5 {
   display: flex;
   /* align-items: center; */
   justify-content: center;
-  gap: 100px;
+  /* gap: 100px; */
   color: #ffffff;
   /* background-color: #fff; */
   padding: 20px;
@@ -612,12 +612,7 @@ h5 {
 
     grid-template-columns: repeat(2, 1fr);
   }
-  .contact_info {
-    display: flex;
-    margin: 10px;
-    justify-content: flex-end;
-    gap: 20px;
-  }
+
   .main_header-wrapper {
     margin-top: 20px;
     width: 100%;
@@ -679,6 +674,24 @@ h5 {
     margin: 0;
     width: 100%;
   }
+  .contact_me-email {
+    gap: 10px;
+  }
+  .email--1 {
+    font-size: 16px;
+  }
+  .contact_me {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* align-items: center; */
+    /* width: 80%; */
+  }
+  .contact_me-image {
+    width: 30px;
+    height: 30px;
+  }
+
   #achievements_wrapper {
     padding: 20px 20px;
     /* margin-bottom: 0; */
