@@ -538,6 +538,7 @@ h5 {
   .main_hd {
     width: 100%;
     text-align: center;
+    gap: 50px;
   }
   .main_header-buttons {
     /* text-align: center; */
