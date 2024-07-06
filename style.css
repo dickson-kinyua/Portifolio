@@ -38,19 +38,19 @@ body {
 
 .top_navigation-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 98%;
-  margin: 0 1% !important;
+  /* margin: 0 1% !important; */
   background: #0544688f;
   background-color: #2d2d31;
 
-  /* border: #b5babd41 solid 1px; */
-  padding: 10px 20px;
+  border-bottom: #ffffff41 solid 1px;
+  padding: 10px 2%;
   /* border: #ff4400 solid 2px; */
 }
 
@@ -61,12 +61,16 @@ body {
 }
 .sidebar_nav-list {
   display: flex;
-  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  /* gap: 25px; */
   list-style: none;
   color: #fff;
-  flex: 2;
+  flex: 3;
 }
 .nav_links {
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
@@ -86,12 +90,19 @@ body {
   border-bottom: 1px solid #c69963 !important;
 }
 
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
 .main_header-wrapper {
   align-items: center;
   width: 100%;
-  padding: 1%;
-  margin-top: 20%;
+  padding: 2%;
+  margin-top: 15%;
   height: 65vh;
+  /* border-bottom: #ffffff41 solid 1px; */
 }
 .main_hd {
   width: 100%;
@@ -104,11 +115,11 @@ body {
 .main_header-1 {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 50px;
   flex: 2;
 }
 .main_header-2 {
-  align-self: flex-end;
+  /* align-self: flex-end; */
   text-align: end;
 
   justify-self: center;
@@ -125,7 +136,7 @@ body {
 }
 .front_end {
   text-transform: capitalize;
-  font-size: 28px;
+  font-size: 42px;
   letter-spacing: 8px;
   font-weight: 900;
 }
@@ -315,7 +326,7 @@ h5 {
 }
 
 #contact_me-wrapper {
-  width: 90%;
+  width: 80%;
   margin-top: 150px;
   border: #ffffff31 solid 2px;
 }
@@ -369,7 +380,7 @@ h5 {
 .message_form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   border: #b6b6b646 solid 1px;
   padding: 20px;
 }
@@ -378,12 +389,14 @@ h5 {
   border: none;
   height: 40px;
   color: #fff;
+  padding: 5px;
 }
 .inputm_bg {
   background-color: #ff44003a;
   border: none;
   height: 80px;
   color: #fff;
+  padding: 5px;
 }
 
 .submit_b {
@@ -533,10 +546,15 @@ h5 {
     align-items: flex-end;
   }
   .front_end {
-    font-size: 24px;
+    font-size: 20px;
   }
   .web_developer {
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
   }
   #about_me-wrapper {
     padding: 10px 10px;
@@ -570,6 +588,10 @@ h5 {
     width: 100%;
 
     padding: 10px 10px;
+  }
+
+  .modal {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -626,7 +648,11 @@ h5 {
 
     grid-template-columns: repeat(2, 1fr);
   }
-
+  .logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
   .main_header-wrapper {
     margin-top: 20px;
     width: 100%;
@@ -749,5 +775,8 @@ h5 {
     width: 300px;
     height: 200px;
     border-radius: 5%;
+  }
+  .modal {
+    grid-template-columns: 1fr;
   }
 }
