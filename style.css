@@ -68,11 +68,22 @@ body {
   /* gap: 25px; */
   list-style: none;
   color: #fff;
-  flex: 3;
+  flex: 2;
 }
-/* .mobile_menu {
+.mobile_menu {
+  margin: 15% 0;
   display: none;
-} */
+  list-style: none;
+  border: #ffffff25 solid 1px;
+  padding: 5% 10%;
+  width: 80%;
+  /* text-align: center; */
+  position: relative;
+}
+.mobile_menu-links {
+  list-style: none;
+}
+
 .nav_links {
   display: block;
   text-decoration: none;
@@ -357,12 +368,13 @@ h5 {
   margin-top: 300px;
   margin-bottom: 100px;
   border: #ffffff13 solid 1px;
-  background-image: url(./img/images.jfif);
+  background-color: #0000006c;
+  /* background-image: url(./img/images.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-  /* padding-top: 10%; */
+  background-position: center; */
+  border-bottom-left-radius: 20%;
+  padding: 5%;
 }
 .contact_me {
   width: 100%;
@@ -579,7 +591,7 @@ h5 {
     align-items: flex-end;
   }
   .front_end {
-    font-size: 20px;
+    font-size: 18px;
   }
   .web_developer {
     font-size: 10px;
@@ -588,6 +600,21 @@ h5 {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+  }
+  .main_header-wrapper {
+    padding: 2%;
+  }
+  .home_image-div {
+    padding: 2%;
+  }
+  .home_image {
+    width: 100%;
+    height: 200px;
+    pointer-events: none;
+  }
+
+  .main_header-2 {
+    font-size: 14px;
   }
   #about_me-wrapper {
     padding: 10px 10px;
@@ -694,7 +721,6 @@ h5 {
   .main_hd {
     flex-direction: column;
     width: 100%;
-    text-align: center;
     gap: 50px;
   }
   .main_header-buttons {
@@ -702,22 +728,36 @@ h5 {
     align-self: center;
     gap: 50px;
   }
+  .hola {
+    align-self: flex-start;
+  }
   .main_header-2 {
     display: none;
   }
   .front_end {
     font-size: 14px;
-    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    /* text-align: center; */
     text-transform: uppercase;
   }
   .web_developer {
+    /* align-self: center; */
     font-size: 10px;
-    /* padding: 0 10px; */
+    align-items: flex-start;
   }
 
   .main_page-content--wrapper {
     margin: 0;
     padding: 0;
+  }
+  .home_image-div {
+    padding: 2%;
+  }
+  .home_image {
+    width: 100%;
+    height: 100px;
+    pointer-events: none;
   }
   #about_me-wrapper {
     width: 100%;
@@ -754,6 +794,9 @@ h5 {
   }
   .email--1 {
     font-size: 16px;
+  }
+  .email--3 {
+    display: none;
   }
   .contact_me {
     display: flex;
@@ -811,5 +854,24 @@ h5 {
   }
   .modal {
     grid-template-columns: 1fr;
+  }
+  .checkbtn {
+    background-color: #2d2d31;
+    color: #fff;
+    border: none;
+  }
+  .mobi {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .close_mobile-view {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
   }
 }

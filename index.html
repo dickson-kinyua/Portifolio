@@ -58,25 +58,53 @@
             >
           </li>
         </ul>
-        <!-- <div class="mobile_menu">
-          <ul>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-          </ul>
-        </div> -->
+
         <!-- <input type="checkbox" id="check" /> -->
-        <label for="check" class="checkbtn">
+        <button class="checkbtn">
           <i class="fa fa-bars"></i>
-        </label>
+        </button>
       </section>
+
+      <!-- mobile menu class hidden -->
+
+      <div class="mobile_menu">
+        <ul class="mobile_menu-links">
+          <li>
+            <a class="nav_links mobi" href="#about_me-wrapper">about</a>
+          </li>
+
+          <li>
+            <a class="nav_links mobi" href="#mission">Mission</a>
+          </li>
+          <li>
+            <a class="nav_links mobi" href="#achievements_wrapper"
+              >Achievements</a
+            >
+          </li>
+          <li>
+            <a class="nav_links mobi" href="#experience_wrapper">Experience</a>
+          </li>
+          <li>
+            <a class="nav_links mobi" href="#projects_section-wrapper"
+              >Projects</a
+            >
+          </li>
+
+          <li>
+            <a class="nav_links mobi" href="#contact_me-wrapper"
+              >Contact me<button class="btn-arrow">&rarr;</button></a
+            >
+          </li>
+        </ul>
+        <button class="close_mobile-view">&times;</button>
+      </div>
+
+      <!-- End of mobile menu -->
+
       <header class="main_header-wrapper">
         <div class="main_hd">
           <div class="main_header-1">
-            <p>Hola Welcome,</p>
+            <p class="hola">Hola Welcome,</p>
             <div class="front_end"><h1>I'm Dickson,Web Developer</h1></div>
             <div class="web_developer">
               <h2>{Javascript,React,MongoDB,CSS,Tailwind,Sass}</h2>
@@ -295,7 +323,7 @@
         <div class="contact_me">
           <div class="contact_me-email">
             <div class="email--1">
-              <p>Let's chat......<br />Tell me about your <br />Project</p>
+              <p>Let's chat.....</p>
             </div>
             <!-- <div class="email--2">
               <p>We can work together</p>
@@ -325,7 +353,6 @@
                 class="input_bg"
               />
               <label for="Email Address"></label>
-              <p>Tell me more about your project</p>
               <input type="text" class="inputm_bg" />
               <label for="Message"></label>
               <button class="submit_b" type="submit">Send Message</button>
