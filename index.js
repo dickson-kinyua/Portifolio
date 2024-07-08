@@ -56,10 +56,12 @@ submitB.addEventListener("click", (e) => {
 });
 
 mobileMenu.addEventListener("click", () => {
-  if ((mobileMenuDiv.style.display = "none"))
-    mobileMenuDiv.style.display = "block";
+  // if ((mobileMenuDiv.style.display = "none"))
+  mobileMenuDiv.style.display = "block";
+  mobileMenu.style.display = "none";
 });
 
 closeMobileView.addEventListener("click", () => {
   mobileMenuDiv.style.display = "none";
+  mobileMenu.style.display = "block";
 });
