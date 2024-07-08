@@ -17,10 +17,7 @@ const submitB = document.querySelector(".submit_b");
 const mobileMenu = document.querySelector(".checkbtn");
 const mobileMenuDiv = document.querySelector(".mobile_menu");
 const closeMobileView = document.querySelector(".close_mobile-view");
-
-// loader.addEventListener("transitionend", () => {
-//   document.body.removeChild("loader");
-// });
+const mobileLinks = document.querySelectorAll(".mobi");
 
 window.addEventListener("load", () => {
   loader.classList.add("loader-hidden");
@@ -40,16 +37,6 @@ download_cv.addEventListener("click", () => {
   overviewWrapper.classList.add("overlay2");
   // overviewWrapper.classList.remove("hidden2");
 });
-
-// closeOverview.addEventListener("click", () => {
-//   overviewWrapper.classList.remove("overlay2");
-//   overviewWrapper.classList.add("hidden2");
-// });
-
-// menu_Icon.addEventListener("click", () => {
-//   document.querySelector(".sidebar_nav-list").style.display = "block";
-// });
-
 submitB.addEventListener("click", (e) => {
   e.preventDefault();
   alert("Your Message has been sent!");
@@ -64,4 +51,8 @@ mobileMenu.addEventListener("click", () => {
 closeMobileView.addEventListener("click", () => {
   mobileMenuDiv.style.display = "none";
   mobileMenu.style.display = "block";
+});
+
+mobileLinks.addEventListener("click", () => {
+  mobileMenuDiv.style.display = "none";
 });
