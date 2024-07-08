@@ -15,7 +15,7 @@ body {
   font-size: 14px;
   position: relative;
   /* background-color: #054468; */
-  background-color: #27ae5f;
+  /* background-color: #27ae60; */
   background: #2d2d31;
   /* background-color: #080808; */
 
@@ -119,8 +119,20 @@ body {
 .main_header-wrapper {
   align-items: center;
   width: 100%;
-  padding: 2% 6%;
-  margin-top: 10%;
+  padding: 10% 2%;
+  margin-top: 5%;
+  /* padding-top: 20%; */
+  height: 60vh;
+  background-image: url(./img/f13.jpg);
+
+  /* filter: blur(2px); */
+
+  background-image: linear-gradient(#2e312d7a, #2d2d31), url(./images/1.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: #fff solid 1px; */
+  background-position: center;
+  border-bottom-right-radius: 20%;
   /* height: 60vh; */
 }
 .main_hd {
@@ -703,7 +715,7 @@ h5 {
 
   .view_skills {
     font-size: 0.9rem;
-    padding: 5px 10px;
+    padding: 7px 14px;
     text-transform: capitalize;
   }
   .download_cv-btn {
@@ -722,11 +734,12 @@ h5 {
     margin-top: 50px;
     width: 100%;
     height: auto;
+    border-bottom-right-radius: 10%;
   }
   .main_hd {
     flex-direction: column;
     width: 100%;
-    gap: 50px;
+    gap: 100px;
     align-items: center;
     text-align: center;
     padding: 10px;
@@ -736,12 +749,13 @@ h5 {
     /* text-align: center; */
     align-self: center;
     gap: 100px;
+    margin-top: 20px;
   }
   /* .hola {
     align-self: flex-start;
   } */
   .main_header-1 {
-    gap: 10px;
+    gap: 1px;
     letter-spacing: 0.05em;
   }
   .main_header-2 {
@@ -756,6 +770,7 @@ h5 {
     font-size: 16px;
     color: #c7c7c7;
     letter-spacing: 0.05em;
+    margin-top: 2px;
   }
 
   .home_image-div {
