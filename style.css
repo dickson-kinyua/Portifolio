@@ -292,6 +292,9 @@ h4 {
 .achievements_list ul li:last-child {
   margin-bottom: 0;
 }
+.right_arrow {
+  margin-right: 6px;
+}
 #experience_wrapper {
   display: flex;
   flex-direction: column;
@@ -700,7 +703,7 @@ h5 {
 
   .view_skills {
     font-size: 12px;
-    padding: 2px;
+    padding: 5px 10px;
   }
   .download_cv-btn {
     font-size: 14px;
@@ -722,6 +725,8 @@ h5 {
     flex-direction: column;
     width: 100%;
     gap: 50px;
+    align-items: center;
+    padding: 0 10px;
   }
   .main_header-buttons {
     width: 100%;
@@ -733,7 +738,7 @@ h5 {
     align-self: flex-start;
   }
   .main_header-1 {
-    gap: 50px;
+    gap: 30px;
   }
   .main_header-2 {
     display: none;
@@ -741,15 +746,15 @@ h5 {
   .front_end {
     font-size: 12px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     /* text-align: center; */
     text-transform: uppercase;
   }
   .web_developer {
-    /* align-self: center; */
+    align-self: center;
     font-size: 10px;
-    align-items: flex-start;
-    width: 80%;
+    /* align-items: flex-start; */
+    width: 100%;
   }
 
   .home_image-div {
