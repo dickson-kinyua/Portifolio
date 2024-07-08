@@ -726,7 +726,7 @@ h5 {
     width: 100%;
     gap: 50px;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 2%;
   }
   .main_header-buttons {
     width: 100%;
@@ -736,6 +736,7 @@ h5 {
   }
   .hola {
     align-self: flex-start;
+    padding: 0 2%;
   }
   .main_header-1 {
     gap: 30px;
@@ -749,12 +750,14 @@ h5 {
     align-items: center;
     /* text-align: center; */
     text-transform: uppercase;
+    padding: 0 2%;
   }
   .web_developer {
     align-self: center;
     font-size: 10px;
     /* align-items: flex-start; */
     width: 100%;
+    padding: 0 2%;
   }
 
   .home_image-div {
