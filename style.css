@@ -759,7 +759,7 @@ h5 {
     letter-spacing: 0.05em;
   }
   .main_header-2 {
-    display: block;
+    display: none;
   }
   .front_end {
     font-size: 18px;
