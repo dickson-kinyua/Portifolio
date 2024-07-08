@@ -718,6 +718,7 @@ h5 {
     gap: 50px;
   }
   .main_header-buttons {
+    width: 100%;
     /* text-align: center; */
     align-self: center;
     gap: 100px;
