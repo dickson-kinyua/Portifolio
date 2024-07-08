@@ -10,8 +10,8 @@ html {
 body {
   font-family: sans-serif;
   margin-right: 0.5%;
-  line-height: 1.5;
-  letter-spacing: 1.1px;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
   font-size: 14px;
   position: relative;
   /* background-color: #054468; */
@@ -702,11 +702,13 @@ h5 {
   }
 
   .view_skills {
-    font-size: 12px;
+    font-size: 0.9rem;
     padding: 5px 10px;
+    text-transform: capitalize;
   }
   .download_cv-btn {
-    font-size: 14px;
+    font-size: 0.9rem;
+    text-transform: capitalize;
   }
   .sidebar_nav-list {
     display: none;
@@ -726,7 +728,8 @@ h5 {
     width: 100%;
     gap: 50px;
     align-items: center;
-    padding: 0 2%;
+    text-align: center;
+    padding: 10px;
   }
   .main_header-buttons {
     width: 100%;
@@ -734,30 +737,25 @@ h5 {
     align-self: center;
     gap: 100px;
   }
-  .hola {
+  /* .hola {
     align-self: flex-start;
-    padding: 0 2%;
-  }
+  } */
   .main_header-1 {
-    gap: 30px;
+    gap: 10px;
+    letter-spacing: 0.05em;
   }
   .main_header-2 {
-    display: none;
+    display: block;
   }
   .front_end {
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    /* text-align: center; */
+    font-size: 18px;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    padding: 0 2%;
   }
   .web_developer {
-    align-self: center;
-    font-size: 10px;
-    /* align-items: flex-start; */
-    width: 100%;
-    padding: 0 2%;
+    font-size: 16px;
+    color: #c7c7c7;
+    letter-spacing: 0.05em;
   }
 
   .home_image-div {
