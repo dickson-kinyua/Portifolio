@@ -725,7 +725,7 @@ h5 {
     display: none;
   }
   .front_end {
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
     align-items: flex-start;
     /* text-align: center; */
@@ -735,6 +735,7 @@ h5 {
     /* align-self: center; */
     font-size: 10px;
     align-items: flex-start;
+    width: 80%;
   }
 
   .main_page-content--wrapper {
