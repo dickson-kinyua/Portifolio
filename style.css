@@ -368,7 +368,9 @@ h5 {
   margin-top: 300px;
   margin-bottom: 100px;
   border: #ffffff13 solid 1px;
-  background-color: #0000006c;
+  background-color: #ff440018;
+
+  /* background-color: #0000006c; */
   /* background-image: url(./img/images.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -380,7 +382,7 @@ h5 {
   width: 100%;
   display: flex;
   justify-content: center;
-  color: #fffffff8;
+  color: #ffffff;
 
   padding: 20px;
 }
@@ -430,14 +432,15 @@ h5 {
   border-radius: 20px;
 }
 .input_bg {
-  background-color: #ff440011;
+  background-color: #5e5c5b54;
   border: none;
   height: 40px;
   color: #fff;
   padding: 5px;
 }
 .inputm_bg {
-  background-color: #ff44000c;
+  background-color: #5e5c5b54;
+
   border: none;
   height: 80px;
   color: #fff;
@@ -452,6 +455,8 @@ h5 {
   border: none;
   border-radius: 25px;
   transition: all 0.6s;
+  background-color: #c7c7c7;
+  font-weight: 700;
 }
 .submit_b:hover {
   background-color: orangered;
@@ -677,7 +682,7 @@ h5 {
   .top_navigation-wrapper {
     /* display: none; */
     display: flex;
-    position: relative;
+    position: fixed;
     align-items: flex-start;
     justify-content: space-between;
     /* height: fit-content; */
@@ -708,7 +713,7 @@ h5 {
     border-radius: 50%;
   }
   .main_header-wrapper {
-    margin-top: 20px;
+    margin-top: 50px;
     width: 100%;
     height: auto;
   }
@@ -763,8 +768,7 @@ h5 {
   }
   .about_me {
     display: flex;
-    align-items: center;
-    /* flex-direction: column; */
+
     width: 100%;
     margin-top: 50px;
     padding: 0;
@@ -774,7 +778,7 @@ h5 {
     height: auto;
   }
   #mission {
-    padding-top: 20px;
+    padding-top: 60px;
     margin-top: 40px;
   }
   .projects_list {
@@ -806,7 +810,8 @@ h5 {
   }
 
   #achievements_wrapper {
-    padding: 20px 20px;
+    padding: 20px 10px;
+    padding-top: 60px;
     /* margin-bottom: 0; */
     margin: 50px 0;
   }
@@ -814,6 +819,8 @@ h5 {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    padding-top: 60px;
+
     margin-top: 10px;
   }
   .experience_list {
@@ -832,7 +839,7 @@ h5 {
     flex: 2;
   }
   #projects_section-wrapper {
-    padding-top: 25px;
+    padding-top: 60px;
     margin: 50px 0;
     width: 100%;
   }

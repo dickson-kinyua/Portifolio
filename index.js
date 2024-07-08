@@ -52,7 +52,10 @@ closeMobileView.addEventListener("click", () => {
   mobileMenuDiv.style.display = "none";
   mobileMenu.style.display = "block";
 });
-
-mobileLinks.addEventListener("click", () => {
-  mobileMenuDiv.style.display = "none";
+mobileLinks.forEach((item) => {
+  item.addEventListener("click", () => {
+    // Hide the menu
+    mobileMenuDiv.style.display = "none";
+    mobileMenu.style.display = "block";
+  });
 });
