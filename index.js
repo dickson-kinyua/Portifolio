@@ -4,6 +4,7 @@ const modal = document.querySelector(".skills_modal");
 const viewSkills = document.querySelector(".view_skills");
 const skillSection = document.querySelector(".skills_wrapper");
 const mainHeader = document.querySelector(".main_header");
+const main_header_wrapper = document.querySelector(".main_header-wrapper");
 // const introButton = document.querySelector(".intro_button");
 const download_cv = document.querySelector(".download_cv-btn");
 const closeButton = document.querySelector(".close_button");
@@ -46,11 +47,13 @@ mobileMenu.addEventListener("click", () => {
   // if ((mobileMenuDiv.style.display = "none"))
   mobileMenuDiv.style.display = "block";
   mobileMenu.style.display = "none";
+  main_header_wrapper.style.marginTop = "270px";
 });
 
 closeMobileView.addEventListener("click", () => {
   mobileMenuDiv.style.display = "none";
   mobileMenu.style.display = "block";
+  main_header_wrapper.style.marginTop = "50px";
 });
 mobileLinks.forEach((item) => {
   item.addEventListener("click", () => {
