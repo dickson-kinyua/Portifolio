@@ -54,12 +54,6 @@
               >Projects</a
             >
           </li>
-
-          <li>
-            <a class="nav_links settings_l" href="#contact_me-wrapper"
-              >Contact me<button class="btn-arrow">&rarr;</button></a
-            >
-          </li>
         </ul>
         <button class="checkbtn">
           <i class="fa fa-bars"></i>
@@ -89,12 +83,6 @@
                 >Projects</a
               >
             </li>
-
-            <li>
-              <a class="nav_links mobi" href="#contact_me-wrapper"
-                >Contact me<button class="btn-arrow">&rarr;</button></a
-              >
-            </li>
           </ul>
           <button class="close_mobile-view">&times;</button>
         </div>
@@ -106,13 +94,19 @@
         <div class="social_media-wrapper">
           <div class="social_media">
             <button class="social_media-links">
-              <img class="social_media-icons" src="./img/fb.JPG" />
+              <a href="https://web.facebook.com/dickson.kinyua.946/">
+                <img class="social_media-icons" src="./img/fb.JPG" />
+              </a>
             </button>
             <button class="social_media-links">
-              <img class="social_media-icons" src="./img/x.JPG" />
+              <a href="https://x.com/dickson_karugu">
+                <img class="social_media-icons" src="./img/x.JPG" />
+              </a>
             </button>
             <button class="social_media-links">
-              <img class="social_media-icons" src="./img/linkedin.JPG" />
+              <a href="https://www.linkedin.com/in/dee-key-2b1692259/">
+                <img class="social_media-icons" src="./img/linkedin.JPG" />
+              </a>
             </button>
           </div>
           <div class="main_hd">
@@ -467,8 +461,9 @@
                 </ul>
               </div>
             </div>
-
-            <img class="projects_images" src="./img/activex.png" />
+            <div class="project-images-wrapper">
+              <img class="projects_images" src="./img/activex.png" />
+            </div>
           </div>
           <div class="all_project_wrapper">
             <div class="project_1st-div">
@@ -521,48 +516,54 @@
         </div>
       </section>
 
-      <section id="contact_me-wrapper">
-        <div class="contact_me">
-          <div class="contact_me-email">
-            <div class="email--1">
-              <p>Let's chat.....</p>
-            </div>
-            <!-- <div class="email--2">
-              <p>We can work together</p>
-            </div> -->
-            <div class="email--3">
-              <div class="mail_img-wrapper">
-                <img
-                  class="contact_me-image"
-                  src="./img/profile.jpeg"
-                  alt="Dickson"
-                />
+      <footer class="footer">
+        <button class="contact_link">Contact Dickson Kinyua</button>
+        <ul class="sidebar_nav-list--footer">
+          <li>
+            <a class="footer_links" href="#">Home</a>
+          </li>
+          <li>
+            <a class="footer_links" href="#about_me-wrapper">about</a>
+          </li>
+
+          <li>
+            <a class="footer_links" href="#mission">Mission</a>
+          </li>
+          <li>
+            <a class="footer_links" href="#achievements_wrapper"
+              >Achievements</a
+            >
+          </li>
+          <li>
+            <a class="footer_links" href="#experience_wrapper">Experience</a>
+          </li>
+          <li>
+            <a class="footer_links" href="#projects_section-wrapper"
+              >Projects</a
+            >
+          </li>
+        </ul>
+        <section class="contact_me-wrapper hidden2">
+          <div class="contact_form">
+            <form class="actual_form">
+              <div>
+                <img class="email_icon" src="./img/email.JPG" />
               </div>
-              <div class="mail">
-                <p>Mail me at</p>
-                <a class="email" href="">dickykinyua@gmail.com</a>
-              </div>
-            </div>
-          </div>
-          <div class="contact_me-form">
-            <!-- <p>Send me a Message</p> -->
-            <form class="message_form">
-              <input type="text" placeholder="Full Name*" class="input_bg" />
-              <label for="Full Names"></label>
-              <input
+              <button class="close_email-form">&times;</button>
+              <input class="form_field" type="text" placeholder="Your Name" />
+              <input class="form_field" type="text" placeholder="Email" />
+              <textarea
+                class="form_field-message"
                 type="text"
-                placeholder="Email Address*"
-                class="input_bg"
-              />
-              <label for="Email Address"></label>
-              <input type="text" class="inputm_bg" />
-              <label for="Message"></label>
-              <button class="submit_b" type="submit">Send Message</button>
+                rows="20"
+                placeholder="Enter your message"
+              ></textarea>
+              <button class="send_email" type="submit">Send</button>
             </form>
           </div>
-        </div>
-      </section>
-      <footer>&copy;Copyright by Dickson Kinyua.</footer>
+        </section>
+        <div>&copy;Copyright by Dickson Kinyua.</div>
+      </footer>
     </article>
     <section class="skills_wrapper hidden">
       <div class="modal">

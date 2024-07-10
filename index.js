@@ -19,7 +19,9 @@ const mobileMenu = document.querySelector(".checkbtn");
 const mobileMenuDiv = document.querySelector(".mobile_menu");
 const closeMobileView = document.querySelector(".close_mobile-view");
 const mobileLinks = document.querySelectorAll(".mobi");
-
+const contactLink = document.querySelector(".contact_link");
+const contactForm = document.querySelector("contact_form");
+const contactMeWrapper = document.querySelector(".contact_me-wrapper");
 window.addEventListener("load", () => {
   loader.classList.add("loader-hidden");
 });
@@ -37,10 +39,6 @@ closeButton.addEventListener("click", function () {
 download_cv.addEventListener("click", () => {
   overviewWrapper.classList.add("overlay2");
   // overviewWrapper.classList.remove("hidden2");
-});
-submitB.addEventListener("click", (e) => {
-  e.preventDefault();
-  alert("Your Message has been sent!");
 });
 
 mobileMenu.addEventListener("click", () => {
@@ -61,4 +59,13 @@ mobileLinks.forEach((item) => {
     mobileMenuDiv.style.display = "none";
     mobileMenu.style.display = "block";
   });
+});
+contactLink.addEventListener("click", () => {
+  // contactMeWrapper.classList.add("overlay");
+  contactMeWrapper.classList.remove("hidden2");
+});
+
+document.querySelector(".close_email-form").addEventListener("click", (e) => {
+  e.preventDefault();
+  contactMeWrapper.classList.add("hidden2");
 });
