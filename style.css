@@ -8,25 +8,16 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin-right: 0.5%;
   line-height: 1.4;
   letter-spacing: 0.05em;
-  font-size: 16px;
   position: relative;
   /* background-color: #054468; */
   /* background-color: #27ae60; */
   background: #2d2d31;
-  /* background-color: #080808; */
-
   color: #fffffff3;
   font-weight: 500;
-  /* background-image: linear-gradient(#1314144d, #05050500), url(); */
-  /* background-position: center; */
-  /* background-size: cover;
-  background-repeat: no-repeat; */
-  /* color: gray; */
-}
 
 .main_page-content--wrapper {
   width: 100%;
@@ -49,10 +40,8 @@ body {
   /* margin: 0 1% !important; */
   background: #0544688f;
   background-color: #2d2d31;
-
-  /* border-bottom: rgba(255, 68, 0, 0.11) solid 1px; */
   padding: 10px 2%;
-  /* border: #ff4400 solid 2px; */
+
 }
 
 .profile {
@@ -74,10 +63,6 @@ body {
   margin: 15% 0;
   display: none;
   list-style: none;
-  /* border: #ffffff25 solid 1px; */
-  /* padding: 5% 10%; */
-  /* width: 80%; */
-  /* text-align: center; */
   position: relative;
 }
 .mobile_menu-links {
@@ -89,10 +74,9 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   font-size: 14px;
+  font-size: 1.2rem;
   color: #ffffff94;
   color: #ffffff;
-
-  font-weight: 700;
   transition: all 0.6s;
 }
 
@@ -125,20 +109,13 @@ body {
   padding: 5% 5%;
   margin-top: 6%;
   margin-bottom: 50px;
-  background-image: url(./img/f13.jpg);
-  background-image: linear-gradient(#2e312d7a, #2d2d31), url(./images/1.jfif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-bottom-right-radius: 20%;
-}
+  }
 
 .social_media-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50px;
-  /* border: #fff solid; */
 }
 .social_media {
   height: 100%;
@@ -291,9 +268,9 @@ h4 {
 .about_image-pic {
   width: 100%;
   height: auto;
-  border-bottom-right-radius: 20%;
-  border-top-left-radius: 20%;
-  border-radius: 50%;
+  /* border-bottom-right-radius: 20%;
+  border-top-left-radius: 20%; */
+  /* border-radius: 50%; */
 }
 
 #mission {
@@ -589,9 +566,12 @@ h5 {
   border: none;
   background: none;
   cursor: pointer;
-  color: red;
+  color: rgba(255, 0, 0, 0.555);
 
   /* display: none; */
+}
+.close_button:hover {
+  color: red;
 }
 
 .overlay {
