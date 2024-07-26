@@ -18,6 +18,7 @@ body {
   background: #2d2d31;
   color: #fffffff3;
   font-weight: 500;
+}
 
 .main_page-content--wrapper {
   width: 100%;
@@ -41,7 +42,6 @@ body {
   background: #0544688f;
   background-color: #2d2d31;
   padding: 10px 2%;
-
 }
 
 .profile {
@@ -109,7 +109,7 @@ body {
   padding: 5% 5%;
   margin-top: 6%;
   margin-bottom: 50px;
-  }
+}
 
 .social_media-wrapper {
   display: flex;
@@ -602,7 +602,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 1s, visibility 1s;
+  transition: opacity 2s, visibility 2s;
 }
 
 .loader-hidden {
@@ -619,7 +619,7 @@ h5 {
   border-top-color: rgb(2, 88, 128);
   border-top-color: orangered;
   border-radius: 50%;
-  animation: loading 1s ease infinite;
+  animation: loading 2s ease infinite;
 }
 
 @keyframes loading {
