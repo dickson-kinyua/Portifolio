@@ -760,6 +760,7 @@ h5 {
     flex-direction: column;
     align-items: center; */
   }
+
   .main_page-content--wrapper {
     margin: 2%;
     padding: 1%;
@@ -975,7 +976,7 @@ h5 {
     grid-template-columns: 1fr;
   }
   .checkbtn {
-    background-color: #2d2d31;
+    /* background-color: #2d2d31; */
     color: #fff;
     border: none;
   }
@@ -992,7 +993,7 @@ h5 {
     top: 4%;
     right: 2px;
     background: none;
-    color: #fff;
+    /* color: #6e6b6b; */
     border: none;
     font-size: 36px;
     cursor: pointer;
