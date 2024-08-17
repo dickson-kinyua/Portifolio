@@ -557,11 +557,20 @@
         </ul>
         <section class="contact_me-wrapper hidden2">
           <div class="contact_form">
-            <form class="actual_form">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="actual_form"
+            >
               <div>
                 <img class="email_icon" src="./img/email.JPG" />
               </div>
               <button class="close_email-form">&times;</button>
+              <input
+                type="hidden"
+                name="access_key"
+                value="cff5df47-4eb5-4c2c-906d-3b95edcfe960"
+              />
               <input
                 class="form_field"
                 type="text"
