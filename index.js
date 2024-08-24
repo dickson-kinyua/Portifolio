@@ -60,7 +60,6 @@ mobileLinks.forEach((item) => {
   });
 });
 contactLink.addEventListener("click", () => {
-  // contactMeWrapper.classList.add("overlay");
   contactMeWrapper.classList.remove("hidden2");
 });
 
