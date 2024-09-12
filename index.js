@@ -22,8 +22,14 @@ const mobileLinks = document.querySelectorAll(".mobi");
 const contactLink = document.querySelector(".contact_link");
 const contactForm = document.querySelector("contact_form");
 const contactMeWrapper = document.querySelector(".contact_me-wrapper");
+const aboutLink = document.querySelector(".about_link");
+const about = document.querySelector(".about_me-wrapper");
 
 window.addEventListener("load", () => loader.classList.add("loader-hidden"));
+
+// aboutLink.addEventListener("click", (e) => {
+//   about.scrollIntoView({ behavior: "smooth" });
+// });
 
 viewSkills.addEventListener("click", function () {
   skillSection.classList.add("overlay");
