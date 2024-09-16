@@ -73,3 +73,14 @@ document.querySelector(".close_email-form").addEventListener("click", (e) => {
   e.preventDefault();
   contactMeWrapper.classList.add("hidden2");
 });
+
+//smooth scrolling from the nav bar
+
+document.querySelectorAll(".nav_links").forEach(function (item) {
+  item.addEventListener("click", function (e) {
+    e.preventDefault();
+    const id = this.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    console.log(id);
+  });
+});
